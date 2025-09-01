@@ -23,8 +23,8 @@ import { Loader } from './_components/loader';
 type MessagePart =
   | { type: 'text'; text: string }
   | { type: 'source-url'; url: string }
-  | { type: 'tool-weather'; [key: string]: any }
-  | { type: 'tool-convertFahrenheitToCelsius'; [key: string]: any };
+  | { type: 'tool-weather'; [key: string]: string }
+  | { type: 'tool-convertFahrenheitToCelsius'; [key: string]: string };
 
 type ChatMessage = { id: string; role: 'user' | 'assistant'; parts: MessagePart[] };
 
